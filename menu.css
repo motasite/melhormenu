@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #363636;
+    color: #fff;
+    height: 60px;
+}
+
+header img.logo {
+    max-width: 50px;
+
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header nav {
+    display: none;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 14px;
+    font-size: 14px;
+}
+
+section.hero {
+    background-image: url(imagem/grupoVingadores1.webp);
+    height: 500px;
+    background-size: cover;
+    background-position: 100%;
+    background-position: center;
+}
+
+section.hero .hero-content {
+    color: #fff;
+   
+    margin: auto;
+}
+
+section.hero .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+section.hero .hero-content h2 {
+    margin: 0;
+    font-size: 30px;
+
+}
+
+section.hero .hero-content p {
+    margin: 8px 0px;
+    max-width: 260px;
+    font-size: 14px; border: 1px solid yellow;
+}
+
+section.hero .hero-content button {
+    background-color: rgb(221, 67, 6);
+    font-size: 25px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    color: #fff;
+}
+
+section.products {
+    padding: 40px 0;
+}
+
+section.products .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0;
+}
+
+section.products .product {
+    background-color: lightgrey;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    /* border: 2px solid yellow;  */
+}
+
+.container .img1 {
+    background-image: url(imagem/braveSF.png);
+    background-size: cover;
+    background-position: top;
+}
+
+.container .img2 {
+    background-image: url(imagem/grupoVingadores1.jpg);
+    background-size: cover;
+}
+
+.container .img3 {
+    background-image: url(imagem/grupoVingadores5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    section.products .container {
+        flex-direction: row;
+    }
+
+    section.products .product {
+        width: 33%;
+        margin-bottom: 0;
+    }
+
+    section.hero .hero-content p {
+    margin: 8px 0px;
+    max-width: 260px;
+    font-size: 14px; border: 1px solid yellow;
+}
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+}
+
